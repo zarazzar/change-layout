@@ -13,4 +13,14 @@
         android:text="Selamat Datang di indomaret"
         android:layout_centerInParent="true" />
 
+    <TextView
+        android:id="@+id/TV_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_selamatDatang"
+        android:layout_centerInParent="true"
+        android:text="NAMA"
+        android:textSize="100px"
+        android:textStyle="bold" />
+
 </RelativeLayout>
