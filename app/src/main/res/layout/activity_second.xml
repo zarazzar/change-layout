@@ -13,6 +13,4 @@
         android:text="Selamat Datang di indomaret"
         android:layout_centerInParent="true" />
 
-
-
 </RelativeLayout>
