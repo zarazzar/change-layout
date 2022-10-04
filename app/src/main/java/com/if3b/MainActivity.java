@@ -21,17 +21,19 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Layout A");
 
-        ETnama = findViewById(R.id.ET_nama);
-        
+        ETnama = (EditText) findViewById(R.id.ET_nama);
 
         btnPindah = findViewById(R.id.btn_pindah);
 
-        btnPindah.setOnClickListener(new View.OnClickListener() {
+
+        btnPindah.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(MainActivity.this, SecondActivity.class);
-
+                Intent pindah = new Intent(MainActivity.this, SecondActivity.class );
+                pindah.putExtra("Nama", ETnama.getText().toString());
                 startActivity(pindah);
+
             }
         });
     }

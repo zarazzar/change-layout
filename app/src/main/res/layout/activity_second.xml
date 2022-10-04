@@ -10,8 +10,8 @@
         android:id="@+id/TV_selamatDatang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selamat Datang di indomaret"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:text="Selamat Datang di indomaret" />
 
     <TextView
         android:id="@+id/TV_nama"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/TV_selamatDatang"
         android:layout_centerInParent="true"
-        android:text="NAMA"
+        android:text="Name"
         android:textSize="100px"
         android:textStyle="bold" />
 
