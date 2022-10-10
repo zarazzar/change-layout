@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        String nama = ETnama.getText().toString();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -25,13 +26,20 @@ public class MainActivity extends AppCompatActivity {
 
         btnPindah = findViewById(R.id.btn_pindah);
 
+        if(nama.trim().equals(""))
+        {
+            ETnama.setError("Nama Harus DiISi!!!");
+        }
+
+
 
         btnPindah.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view) {
                 Intent pindah = new Intent(MainActivity.this, SecondActivity.class );
-                pindah.putExtra("Nama", ETnama.getText().toString());
+                pindah.putExtra("xNama", nama);
+
                 startActivity(pindah);
 
             }
