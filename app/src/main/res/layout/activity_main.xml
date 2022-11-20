@@ -11,8 +11,16 @@
         android:id="@+id/ET_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama"
+        android:hint="NPM"
         android:layout_above="@+id/btn_pindah"
+        android:layout_margin="6dp"
+        />
+    <EditText
+        android:id="@+id/ET_nama1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAMA"
+        android:layout_above="@id/ET_nama"
         android:layout_margin="6dp"
         />
 
@@ -21,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+
         android:text="Pindah Kuyyy" />
 
 

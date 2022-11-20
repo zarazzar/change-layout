@@ -31,18 +31,17 @@ public class MainActivity extends AppCompatActivity {
             ETnama.setError("Nama Harus DiISi!!!");
         }
 
-
-
         btnPindah.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view) {
-                Intent pindah = new Intent(MainActivity.this, SecondActivity.class );
-                pindah.putExtra("xNama", nama);
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    Intent pindah = new Intent(MainActivity.this, SecondActivity.class );
+                    pindah.putExtra("xNama", nama);
 
-                startActivity(pindah);
+                    startActivity(pindah);
 
-            }
-        });
+                }
+            });
     }
 }
